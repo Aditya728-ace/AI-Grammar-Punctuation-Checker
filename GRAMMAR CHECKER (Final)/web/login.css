@@ -1,0 +1,108 @@
+/* Dark background */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    margin: 0;
+    color: #00ffff;
+}
+
+.header-box {
+    background-color: #121212; 
+    color: #00ffff; 
+    text-align: center;
+    padding: 12px; 
+    width: 65%; 
+    max-width: 550px; 
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px; 
+
+    border: 3px solid #00ffff; 
+    position: relative;
+}
+
+.header-box::before {
+    content: "";
+    position: absolute;
+    top: -8px; 
+    left: -8px; 
+    right: -8px;
+    bottom: -8px; 
+    border: 3px solid #00ffff; 
+    border-radius: 15px;
+    z-index: -1;
+}
+
+
+.container {
+    text-align: center;
+    background: rgba(25, 25, 25, 0.98);
+    padding: 20px; 
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    width: 60%;
+    max-width: 500px;
+    border: 2px solid rgba(0, 255, 255, 0.8);
+}
+
+.container h1 {
+    background-color: #00ffff;
+    color: #121212;
+    padding: 12px; 
+    margin: -20px -20px 15px -20px; 
+    border-radius: 12px 12px 0 0;
+    font-size: 20px; 
+}
+
+input {
+    width: 95%;
+    padding: 8px; 
+    font-size: 14px; 
+    border-radius: 6px;
+    border: 1px solid rgba(0, 255, 255, 0.8);
+    background-color: rgba(20, 20, 20, 0.95);
+    color: #ffffff;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Button */
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none;
+    background-color: #00cccc;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+button:hover {
+    background-color: #0099aa;
+    box-shadow: 0px 0px 18px rgba(0, 255, 255, 0.8);
+}
+
+/* Links */
+p {
+    font-size: 14px; 
+}
+
+p a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
